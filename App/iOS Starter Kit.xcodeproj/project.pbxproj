@@ -11,9 +11,7 @@
 		0138188919FC315700825568 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0138188819FC315700825568 /* AppDelegate.m */; };
 		0138188C19FC315700825568 /* iOS_Starter_Kit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0138188A19FC315700825568 /* iOS_Starter_Kit.xcdatamodeld */; };
 		0138188F19FC315700825568 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0138188E19FC315700825568 /* ViewController.m */; };
-		0138189219FC315700825568 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0138189019FC315700825568 /* Main.storyboard */; };
 		0138189419FC315700825568 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0138189319FC315700825568 /* Images.xcassets */; };
-		0138189719FC315700825568 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0138189519FC315700825568 /* LaunchScreen.xib */; };
 		013818A319FC315700825568 /* iOS_Starter_KitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 013818A219FC315700825568 /* iOS_Starter_KitTests.m */; };
 /* End PBXBuildFile section */
 
@@ -36,9 +34,7 @@
 		0138188B19FC315700825568 /* iOS_Starter_Kit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Starter_Kit.xcdatamodel; sourceTree = "<group>"; };
 		0138188D19FC315700825568 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0138188E19FC315700825568 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0138189119FC315700825568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0138189319FC315700825568 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0138189619FC315700825568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0138189C19FC315700825568 /* iOS Starter KitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Starter KitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		013818A119FC315700825568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		013818A219FC315700825568 /* iOS_Starter_KitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Starter_KitTests.m; sourceTree = "<group>"; };
@@ -83,14 +79,10 @@
 		0138188219FC315700825568 /* iOS Starter Kit */ = {
 			isa = PBXGroup;
 			children = (
-				0138188719FC315700825568 /* AppDelegate.h */,
-				0138188819FC315700825568 /* AppDelegate.m */,
-				0138188D19FC315700825568 /* ViewController.h */,
-				0138188E19FC315700825568 /* ViewController.m */,
-				0138189019FC315700825568 /* Main.storyboard */,
-				0138189319FC315700825568 /* Images.xcassets */,
-				0138189519FC315700825568 /* LaunchScreen.xib */,
-				0138188A19FC315700825568 /* iOS_Starter_Kit.xcdatamodeld */,
+				013818AF19FC32A300825568 /* Data */,
+				013818AE19FC329700825568 /* Resources */,
+				013818AC19FC318600825568 /* Application */,
+				013818AD19FC319500825568 /* View Controllers */,
 				0138188319FC315700825568 /* Supporting Files */,
 			);
 			path = "iOS Starter Kit";
@@ -120,6 +112,48 @@
 				013818A119FC315700825568 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		013818AC19FC318600825568 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0138188719FC315700825568 /* AppDelegate.h */,
+				0138188819FC315700825568 /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		013818AD19FC319500825568 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0138188D19FC315700825568 /* ViewController.h */,
+				0138188E19FC315700825568 /* ViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		013818AE19FC329700825568 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0138189319FC315700825568 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		013818AF19FC32A300825568 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				013818B019FC32A900825568 /* Core Data */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		013818B019FC32A900825568 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				0138188A19FC315700825568 /* iOS_Starter_Kit.xcdatamodeld */,
+			);
+			name = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +236,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0138189219FC315700825568 /* Main.storyboard in Resources */,
-				0138189719FC315700825568 /* LaunchScreen.xib in Resources */,
 				0138189419FC315700825568 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,25 +278,6 @@
 			targetProxy = 0138189D19FC315700825568 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		0138189019FC315700825568 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0138189119FC315700825568 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0138189519FC315700825568 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0138189619FC315700825568 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		013818A419FC315700825568 /* Debug */ = {
@@ -416,6 +429,7 @@
 				013818A819FC315700825568 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		013818A919FC315700825568 /* Build configuration list for PBXNativeTarget "iOS Starter KitTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +438,7 @@
 				013818AB19FC315700825568 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
